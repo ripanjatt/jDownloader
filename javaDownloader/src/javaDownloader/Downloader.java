@@ -76,9 +76,9 @@ public class Downloader {
                         boolean created = dir.mkdirs();
                         System.out.println(created);
                     }
-                    if(size != 0){
+                    if(new File(dir + "/" + fileName).length() != 0){
                         /*
-                        If the size is not 0, then it means that the downloader is either retrying or resuming!
+                        If the length is not 0, then it means that the downloader is either retrying or resuming!
                         This block reads the downloaded data and put it to the FileOutputStream!
                         This is to avoid re-downloading in case of error!
                         Since FileOutputStream recreates the file clearing the previous data,
