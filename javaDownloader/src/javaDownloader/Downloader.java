@@ -18,7 +18,7 @@ public class Downloader {
     private Listeners.EventListener eventListener;
     private InputStream inputStream;
     private long size = 0;
-    private boolean isPaused = false;
+    public boolean isPaused = false;
     private boolean isComplete = false;
     private String link, fileName, downloadPath;
     private long length;
