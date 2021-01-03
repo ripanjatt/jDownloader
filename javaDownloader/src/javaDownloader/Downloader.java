@@ -199,6 +199,7 @@ public class Downloader {
         /*
         Method to resume the downloading!
          */
+    	isPaused = false;
         download();
         if(eventListener != null){
             eventListener.onResume();
