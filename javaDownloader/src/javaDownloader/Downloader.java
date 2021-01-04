@@ -73,8 +73,7 @@ public class Downloader {
                 try {
                     File dir = new File(downloadPath);
                     if(!dir.exists()){
-                        boolean created = dir.mkdirs();
-                        System.out.println(created);
+                        dir.mkdirs();
                     }
                     if(new File(dir + "/" + fileName).length() != 0){
                         /*
@@ -141,7 +140,7 @@ public class Downloader {
                                  */
                                 double percent = Double.parseDouble(df.format((((size) / (float)length) * 100.0)));
                                 if(progressListener != null){
-                                    progressListener.onProgress(percent);
+                                    progressListener.onProgress(percent, size, length);
                                 }
                             }
                         }

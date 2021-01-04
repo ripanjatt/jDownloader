@@ -19,7 +19,7 @@ public class Listeners {
         onProgress keeps track of how much data is downloaded in percent!
         progressPercent = 0 if file length is not provided!
          */
-        void onProgress(double progressPercent);
+        void onProgress(double progressPercent, long downloaded, long length);
 
         /*
         onSpeedInKB gives the speed at which the data is being downloaded in Kilobytes per Second!
