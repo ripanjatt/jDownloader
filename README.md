@@ -11,4 +11,4 @@ Features:
 
 Check out the example project for more details!
 
-To use the library in your project, download the jar file and import in as a dependency!
+To use the library in your project, download the jar file and import it as a dependency!
